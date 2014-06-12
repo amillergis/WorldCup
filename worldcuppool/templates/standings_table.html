@@ -1,0 +1,9 @@
+{% if standings_table %}
+	<ul>
+    {% for key,value in standings_table.items %}
+    	<li>{{key}} - {{value.0}} - {{value.1}} Points</li>
+    {% endfor %}
+    <ul>
+{% else %}
+    <p>No results are available.</p>
+{% endif %}
